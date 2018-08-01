@@ -93,6 +93,10 @@ let objectCopy2 = Array(objectCopy[1..<objects.count])
 
 let nums = [Int](repeating: 1, count: 10)
 
+let singObject = objectCopy2[1] as? ASObjectA
+
+singObject?.date = "111"
+singObject?.date
 
 
 
