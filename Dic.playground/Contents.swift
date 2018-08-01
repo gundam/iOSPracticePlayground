@@ -6,7 +6,13 @@ var str = "Hello, playground"
 
 var nums : Dictionary = [String:Any]()
 nums["ket"] = "ss"
+nums.count
+nums.keys.contains("ket")
+nums["ket"]
 nums
 
+var numsCopy = nums
+numsCopy["copty"] = "copu"
+numsCopy
 
 
