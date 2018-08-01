@@ -12,15 +12,20 @@ nums["ket"]
 nums
 
 var numsCopy = nums
-numsCopy["copty"] = "copu"
+nums["copty"] = "copu"
 numsCopy
 
 nums.isEmpty
-nums.removeValue(forKey: "ket")
+//nums.removeValue(forKey: "ket")
 nums.isEmpty
+nums.updateValue("wix", forKey: "ket")
+nums
 
-
-
+for item in nums {
+    print(item.key)
+    print(item.value)
+    print(item)
+}
 
 
 
