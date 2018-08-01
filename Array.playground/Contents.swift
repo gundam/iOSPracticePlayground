@@ -8,6 +8,12 @@ numsLet.count
 var numsVar = [1]
 numsVar.count
 
+struct ASSTObjectA
+{
+    var date : String = "a"
+    var month : String?
+}
+
 class ASObjectB{
     init() {
         
@@ -46,6 +52,14 @@ let oa = ASObjectA()
 oa.date = "v"
 let ob = ASObjectA()
 //ob.date = "d"
+var oc = ASSTObjectA()
+oc.date = "aaa"
+oc
+var od = oc
+od.date = "xxx"
+oc.date
+od.date
+
 var objects:[Any] = [oa,ob]
 objects.count
 objects[1]
@@ -62,13 +76,22 @@ objects.sort { (a, b) -> Bool in
 objects
 
 
+var objectCopy = objects
+objectCopy.removeLast()
+var tempString = "a"
+
+objectCopy.append(tempString)
 
 
+objectCopy
+
+objects
+// 值类型
 
 
-//objects.sorted { (<#Any#>, <#Any#>) -> Bool in
-//    <#code#>
-//}
+let objectCopy2 = Array(objectCopy[1..<objects.count])
+
+let nums = [Int](repeating: 1, count: 10)
 
 
 
