@@ -15,4 +15,14 @@ var numsCopy = nums
 numsCopy["copty"] = "copu"
 numsCopy
 
+nums.isEmpty
+nums.removeValue(forKey: "ket")
+nums.isEmpty
+
+
+
+
+
+
+
 
