@@ -1,6 +1,6 @@
 //: Playground - noun: a place where people can play
 // about Stack
-// stack: first in first out
+// stack: last in first out
 import UIKit
 
 var str = "Hello, playground"
@@ -44,3 +44,38 @@ stack.push(object: "12xxwwww")
 stack.size()
 print(stack)
 
+
+
+protocol baseStack{
+    associatedtype Element
+    var isEmpty : Bool { get }
+    var size : Int {get}
+    var peek : Element?{ get}
+    mutating func push(_element : Element)
+    
+    mutating func pop() -> Element?
+    
+}
+
+struct IntegerStack : baseStack{
+    typealias Element = Int
+    private var stack = [Element]()
+    
+    var isEmpty: Bool{
+        return stack.isEmpty
+    }
+    
+    var size: Int{
+        return stack.count
+    }
+    var peek: Int?{
+        return stack.last
+    }
+    
+    mutating func push(_element: Int) {
+        stack.append(_element)
+    }
+    mutating func pop() -> Element? {
+        return stack.popLast()
+    }
+}
