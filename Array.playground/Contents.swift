@@ -99,4 +99,10 @@ singObject?.date = "111"
 singObject?.date
 
 
+for (index, value) in objects.enumerated() {
+    print(index)
+    print(value)
+}
+
+
 
