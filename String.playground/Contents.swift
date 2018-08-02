@@ -2,7 +2,7 @@
 
 import UIKit
 
-var str = "Hello, playground"
+var str = "abcd"
 
 let num = 3
 let numString = String(num)
@@ -26,3 +26,7 @@ func isStrNum(str: String) ->Bool{
 isStrNum(str: str)
 str.sorted()
 String(str.sorted())
+String(str.sorted { (str1, str2) -> Bool in
+    return str1 > str2
+})
+
