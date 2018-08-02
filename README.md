@@ -1,2 +1,2 @@
-# iOSPraceticePlayground
-iosPracetice
+# iOSPracticePlayground
+iosPractice
