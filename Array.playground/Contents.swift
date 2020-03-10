@@ -2,7 +2,7 @@
 // about Array
 import UIKit
 
-let numsLet = [1,2,3]
+var numsLet = [1,2,3]
 numsLet.count
 
 var numsVar = [1]
@@ -104,5 +104,10 @@ for (index, value) in objects.enumerated() {
     print(value)
 }
 
+
+
+//map
+numsLet.max()
+//numsLet.map(<#T##transform: (Int) throws -> T##(Int) throws -> T#>)
 
 

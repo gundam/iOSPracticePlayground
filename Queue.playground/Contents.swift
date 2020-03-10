@@ -1,7 +1,7 @@
 //: Playground - noun: a place where people can play
 
 import UIKit
-
+import Foundation
 var str = "Hello, playground"
 
 protocol Queue{
@@ -16,6 +16,7 @@ protocol Queue{
     
     mutating func dequeue() -> Element?
 }
+
 
 
 struct IntergerQueue : Queue{
